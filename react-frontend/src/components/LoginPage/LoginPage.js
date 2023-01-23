@@ -17,7 +17,7 @@ const LoginPage = (props) => {
 
     useEffect(() => {
         if (props.isLoggedIn === true) history.push("/");
-    }, [props.isLoggedIn]);
+    }, [history, props.isLoggedIn]);
 
     const onEnter = (e) => {
         if (e.key === "Enter") login();

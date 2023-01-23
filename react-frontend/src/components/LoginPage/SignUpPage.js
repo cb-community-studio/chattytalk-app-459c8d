@@ -19,7 +19,7 @@ const SignUpPage = (props) => {
 
     useEffect(() => {
         if (props.isLoggedIn === true) history.push("/user/studio");
-    }, [props.isLoggedIn]);
+    }, [history, props.isLoggedIn]);
 
     const onEnter = (e) => {
         if (e.key === "Enter") signup();
